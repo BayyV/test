@@ -6,7 +6,6 @@ if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);
 }
 
-// Obtener las cantidades de productos y los IDs desde la aplicación
 $idLeche = $_POST['idLeche'];
 $cantidadLeche = $_POST['cantidadLeche'];
 

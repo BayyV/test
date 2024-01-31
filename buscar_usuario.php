@@ -11,6 +11,7 @@ if ($resultado) {
     while ($fila = mysqli_fetch_assoc($resultado)) {
         $usuariosEncontrados[] = $fila;
     }
+    // Imprimir los resultados como JSON
 
     // Verificar si se encontraron resultados
     if (count($usuariosEncontrados) > 0) {

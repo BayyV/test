@@ -5,6 +5,7 @@ include 'conexion.php';
 if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);
 }
+ // Imprimir los resultados como JSON
 
 // Obtener los datos del formulario POST
 $idProducto = $_POST['idProducto'];

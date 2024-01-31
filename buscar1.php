@@ -14,6 +14,7 @@ if (isset($_GET['idUsuario'])) {
         if (mysqli_num_rows($resultado) > 0) {
             // Procesar los resultados
             $usuarioEncontrado = mysqli_fetch_assoc($resultado);
+            // Imprimir los resultados como JSON
 
             // Imprimir los resultados como JSON
             echo json_encode(array("exito" => 1, "datos" => $usuarioEncontrado));

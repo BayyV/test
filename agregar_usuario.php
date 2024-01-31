@@ -9,6 +9,7 @@ $cargoUsuario = $_POST['cargoUsuario'];
 
 // Modifica tu consulta para incluir los nuevos atributos
 $consulta = "INSERT INTO usuario VALUES ('$idUsuario', '$usuUsuario', '$pssUsuario', '$cargoUsuario')";
+  // Imprimir los resultados como JSON
 
 mysqli_query($conexion, $consulta) or die(mysqli_error($conexion));
 mysqli_close($conexion);
